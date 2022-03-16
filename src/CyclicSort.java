@@ -14,8 +14,13 @@ public class CyclicSort {
 
     static void cyclicSort(int[] arr) {
 
+        //Run a loop to check all elements in the array
+
         for (int i = 0; i < arr.length; i++) {
+            //check if the arr[i] is less than 1
             int correctIndex = arr[i] - 1;
+            //If it is swap
+
             if (arr[i] != arr[correctIndex]) {
                 swap(arr, i, correctIndex);
             }
