@@ -1,8 +1,13 @@
+import java.util.Arrays;
+
 public class SelectionSort {
 
     public static void main(String[] args) {
 
+        int[] arr = {10,9,8,7,6,5,4,3,2,1};
+        selection(arr);
 
+        System.out.println(Arrays.toString(arr));
     }
 
     static void selection(int[] arr){

@@ -27,6 +27,7 @@ public class CyclicSort {
         }
     }
 
+    //Swap function to swap the elements
     static void swap(int[] arr, int first,int second){
         int temp = arr[first];
         arr[first]=arr[second];
