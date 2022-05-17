@@ -1,4 +1,4 @@
-package strings;
+package strings.patterns;
 
 public class Starpattern1 {
 
