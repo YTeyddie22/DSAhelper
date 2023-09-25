@@ -32,11 +32,6 @@ public class Even_Digits {
             return 1;
         }
 
-        int count = 0;
-        while(num > 0) {
-            count++;
-            num /= 10;
-        }
-        return count;
+        return (int)(Math.log10(num)) + 1;
     }
 }
