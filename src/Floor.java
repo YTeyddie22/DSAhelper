@@ -3,7 +3,7 @@ public class Floor {
     public static void main(String[] args) {
 
         int[] arr = {11,22,44,55,66,77,88};
-        int target = 45;
+        int target = 99;
         int ans = floor(arr, target);
 
         System.out.println(ans);
@@ -12,6 +12,10 @@ public class Floor {
     static int floor(int[] arr,int target) {
         int start = 0;
         int end = arr.length - 1;
+
+        if(target > arr[end]) {
+            return -1;
+        }
         return binarySearch(arr, target,start, end);
     }
 
