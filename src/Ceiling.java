@@ -3,14 +3,19 @@ public class Ceiling {
     public static void main(String[] args) {
 
         int[] arr = {11,22,44,55,66,77,88};
-        int target = 45;
+        int target = 10;
         int ans = ceiling(arr, target);
 
         System.out.println(ans);
     }
     static int ceiling(int[] arr,int target) {
+
         int start = 0;
         int end = arr.length - 1;
+
+        if(target < arr[start]) {
+            return -1;
+        }
         return binarySearch(arr, target,start, end);
     }
 
