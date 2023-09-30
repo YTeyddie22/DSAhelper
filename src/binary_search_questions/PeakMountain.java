@@ -1,3 +1,5 @@
+package binary_search_questions;
+
 public class PeakMountain {
 
 
