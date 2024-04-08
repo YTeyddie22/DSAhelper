@@ -15,7 +15,7 @@ public class StringPattern4 {
             //Same as pattern 2 only that we print the column numbers
 
             for (int col = 1; col <= row ; col++) {
-                System.out.print(col);
+                System.out.print(col + " ");
             }
             System.out.println();
         }
